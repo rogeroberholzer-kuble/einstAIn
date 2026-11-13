@@ -44,5 +44,6 @@
     "/media/27": "/assets/docs/07ai-at-work-2025-slideshow-june-2025-edit-02.pdf",
     "/media/20": "/assets/docs/01wef_future_of_jobs_report_2025-1.pdf",
     "/media/22": "/assets/docs/03wp140_web.pdf"
-  }
+  },
+  "docs_base": "https://raw.githubusercontent.com/rogeroberholzer-kuble/einstain-docs/main/"
 }

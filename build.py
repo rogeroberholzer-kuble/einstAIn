@@ -134,6 +134,9 @@ def out_file(path):
 
 def write_dist(rel, text):
     out = os.path.join(DIST, rel)
+    # PDFs liegen nicht auf dem Host (Limite 5 MB pro Datei): docs_base in site.json nennt ihren Ablageort.
+    if SITE.get('docs_base') and rel.endswith('.html'):
+        text = text.replace('/assets/docs/', SITE['docs_base'].rstrip('/') + '/')
     os.makedirs(os.path.dirname(out), exist_ok=True)
     with open(out, 'w', encoding='utf-8') as f:
         f.write(text)
