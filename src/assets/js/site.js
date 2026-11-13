@@ -94,6 +94,15 @@
     collapse(target, !isOpen);
   });
 
+  /* Wie auf der alten Seite ist der erste Eintrag jedes Akkordeons beim Laden offen */
+  doc.querySelectorAll('.accordion').forEach(function (acc) {
+    var first = acc.querySelector('.accordion-collapse');
+    if (first && !acc.querySelector('.accordion-collapse.show')) {
+      first.classList.add('show');
+      setButtons(first, true);
+    }
+  });
+
   /* Blog-Listen: "Mehr laden" blendet die naechsten Eintraege ein */
   doc.querySelectorAll('.view.blog-page').forEach(function (view) {
     var list = null;
