@@ -133,6 +133,14 @@
   doc.querySelectorAll('form[data-contact-form]').forEach(function (form) {
     var status = form.querySelector('.form-status');
     var submit = form.querySelector('[type="submit"]');
+    if (!status) {
+      status = doc.createElement('div');
+      status.className = 'form-status';
+      status.setAttribute('role', 'status');
+      status.setAttribute('aria-live', 'polite');
+      var actions = form.querySelector('.form-actions');
+      if (actions && actions.parentNode) { actions.parentNode.insertBefore(status, actions.nextSibling); } else { form.appendChild(status); }
+    }
     function show(text, ok) {
       if (!status) { return; }
       status.textContent = text;
