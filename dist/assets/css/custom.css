@@ -1,0 +1,21 @@
+/* einstAIn: eigene Ergaenzungen zum uebernommenen Theme-CSS (theme.css).
+   Wird von tools/build_css.py ans Ende von site.css gehaengt. */
+
+/* Einblenden beim Scrollen, ersetzt die GSAP-Animation der alten Seite */
+.js .appear {
+  opacity: 0;
+  transform: translateY(40px) scale(.98);
+  transition: opacity .4s cubic-bezier(.25, .46, .45, .94), transform .4s cubic-bezier(.25, .46, .45, .94);
+}
+.js .appear.appear-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* Rueckmeldung des Kontaktformulars */
+.form-status:empty {
+  display: none;
+}
+.form-status {
+  margin-top: 1rem;
+}

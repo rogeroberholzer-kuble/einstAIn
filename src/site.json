@@ -1,0 +1,48 @@
+{
+  "site_url": "https://einstain.ch",
+  "site_name": "einstAIn",
+  "lang": "de",
+  "noindex": true,
+  "nav": [
+    {
+      "label": "Home",
+      "href": "/de"
+    },
+    {
+      "label": "Insights",
+      "href": "/de/blog"
+    },
+    {
+      "label": "Mission",
+      "href": "/de/mission"
+    },
+    {
+      "label": "Organisation",
+      "href": "/de/organisation"
+    },
+    {
+      "label": "Weiterbildung",
+      "href": "https://einstain-ausbildungsangebot.vercel.app/"
+    },
+    {
+      "label": "Kontakt",
+      "href": "/de/kontakt"
+    }
+  ],
+  "nav_ul_class": "nav navbar-nav",
+  "wrapper_classes": [
+    "",
+    "main-page-wrapper"
+  ],
+  "teaser_row_open": "<div class=\"views-row\">",
+  "list_page_size": 3,
+  "media_redirects": {
+    "/media/26": "/assets/docs/06_052025_mckinsey-learning-perspective.pdf",
+    "/media/25": "/assets/docs/05report.pdf",
+    "/media/23": "/assets/docs/04hai_ai_index_report_2025.pdf",
+    "/media/21": "/assets/docs/02oecd_employment_outlook_2025.pdf",
+    "/media/27": "/assets/docs/07ai-at-work-2025-slideshow-june-2025-edit-02.pdf",
+    "/media/20": "/assets/docs/01wef_future_of_jobs_report_2025-1.pdf",
+    "/media/22": "/assets/docs/03wp140_web.pdf"
+  }
+}

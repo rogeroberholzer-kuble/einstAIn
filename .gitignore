@@ -2,3 +2,6 @@ _crawl/
 .DS_Store
 node_modules/
 __pycache__/
+# PDFs (74 MB) liegen nur auf dem Host und lokal, nicht im Repo
+src/assets/docs/
+dist/assets/docs/
